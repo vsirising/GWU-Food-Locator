@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>GWU FOOD LOCATOR</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/GWUFL.css">
+        <script src="js/addons/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="#" class="navbar-brand scroll-top">The GWU FOOD LOCATOR</a>
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!--/navbarheader-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="cuisine.html">CUISINES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+<!--/headermainpge-->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h4>Having Difficulty Finding Delicious Foods Around Campus?</h4>
+                    <h2>NOW IT'S EASY!</h2>
+                    <p>Choose your favorite cuisine below and find your restaurant.</p>
+                    <div class="primary-button">
+                        <a href="#" class="scroll-link" data-id="cuisine">CUISINES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--/cuisinetabs-->
+    <section id="cuisine" class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="cuisine.html#asianc">
+                        <img src="images/ASIAN.jpg" height="300" width="550" alt="ASIAN">
+                        <h4>ASIAN</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="cuisine.html#americanc">
+                        <img src="images/AMERICAN.jpg" height="300" width="550" alt="Ame">
+                        <h4>AMERICAN</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="cuisine.html#italianc">
+                        <img src="images/ITALIAN.jpg" height="300" width="550" alt="ITA">
+                        <h4>ITALIAN</h4>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="cuisine.html#hispanicc">
+                        <img src="images/HIS.jpg" height="300" width="550" alt="HIS">
+                        <h4>HISPANIC</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="cuisine.html#vegetarianc">
+                        <img src="images/VEG.jpg" height="300" width="550" alt="VEG">
+                        <h4>VEGETARIAN</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="cuisine.html#meddc">
+                        <img src="images/MED.jpg" height="300" width="550" alt="MED">
+                        <h4>MEDDITERANEAN</h4>
+                        </a>
+                    </div>
+                </div>
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <a href="cuisine.html#fusionc">
+                        <img src="images/FUS.jpg" height="300" width="550" alt="FUS">
+                        <h4>FUSION</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--/foot-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Copyright &copy; 2020 GWU FOOD LOCATOR</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Design by Vedika | Vitcharnat | Talabiou</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!--/JAvascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/addons/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/addons/bootstrap.min.js"></script>
+
+    <script src="js/addons/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile 
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>
